@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>haaaaaa!</title>
+  <style>
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: system-ui, -apple-system, sans-serif;
+  background: #f5f5f5;
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #333;
+  margin-top: 0;
+}
+
+button {
+  background: #000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>assalamualaikum!</h1>
+  <p>Siapa tekan dia gay.</p>
+  <button id="btn">tekan lah bodoh</button>
+</div>
+  <script>
+console.log('Editor loaded!');
+
+let clickCount = 0;
+
+function handleClick() {
+  clickCount++;
+  const output = document.getElementById('output');
+  output.innerHTML = `
+    <h3>Clicked ${clickCount} time(s)!</h3>
+    <p>Time: ${new Date().toLocaleTimeString()}</p>
+  `;
+  console.log(`Button clicked ${clickCount} times`);
+}
+  </script>
+</body>
+</html>
